@@ -1,2 +1,3 @@
 # QuizzLett
- A Quiz Application, that brings random questions from an API with selected category, and difficulty
+ * A Quiz Application, that brings random questions from an API with selected category, and difficulty
+ * Made With React
