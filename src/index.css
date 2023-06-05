@@ -87,7 +87,7 @@ select > option{
 }
 
 .welcome--menu{
-  width: 60%;
+  width: 75%;
   height: 80%;
   display: flex;
   flex-direction: column;
