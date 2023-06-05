@@ -1,0 +1,207 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  color:#293264
+}
+
+/* layout */
+
+button{
+  padding: 0.5em 1.5em;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+/* Decoration  */
+
+.top--image{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 35%;
+  z-index: -1;
+}
+.bottom--image{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 35%;
+  z-index: -1;
+}
+
+/* Position Fixed Components */
+.loader,
+.welcome--menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+/* Loader */
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #5391ce; /* Blue */
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* Menu Styling */
+.settings{
+  position: absolute;
+  top: 0em;
+  left: 1em;
+  padding: 0.5em 2em;
+  display: flex;
+  flex-direction: column;
+
+  
+}
+.settings h2{
+  margin: 0.5em;
+}
+select{
+  padding: 0.5em;
+  border-radius: 5px;
+  background-color: rgb(108, 22, 189);
+  color: white;
+  font-weight: bold;
+}
+select > option{
+  background-color: white;
+  color: purple;
+
+}
+
+.welcome--menu{
+  width: 60%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.settings--icon{
+  font-size: 1.45rem;
+  color: rgb(108, 22, 189);
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  cursor: pointer;
+ 
+}
+.settings--icon:hover{
+  transform: scale(1.1);
+}
+
+.settings--icon:active{
+  transform: scale(1);
+}
+
+.welcome--menu h1{
+  margin: 0;
+}
+
+.welcome--menu button{
+  background-color: #4D5B9E;
+  color: whitesmoke;
+  cursor: pointer;
+}
+.welcome--menu button:hover{
+  background-color: #5362ab;
+}
+.welcome--menu button:active,
+.quiz--btn:active{
+  box-shadow: inset 0 0 10px black;
+  transform: scale(0.97);
+}
+.difficulty{
+  padding: 1em;
+  display: flex;
+}
+input[type="radio"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+.difficulty label{
+  border: 1px solid rgb(108, 22, 189);;
+  color: rgb(108, 22, 189);;
+ 
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+}
+.difficulty input[type="radio"]:checked + label{
+  background-color: rgb(108, 22, 189);
+  color: white;
+}
+
+/* Quiz Part */
+/* Questions */
+.question{
+  padding: 1em;
+  border-bottom: 1px solid #DBDEF0;
+}
+
+label{
+  border: 1px solid  #4D5B9E;;
+  border-radius: 10px;
+  padding: 0 0.5em;
+}
+input[type="radio"]:checked + label{
+  background-color: #D6DBF5;
+}
+.labels{
+  display: flex;
+}
+/* Quiz part */
+.quiz{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 60%;
+  height: 80%;
+}
+
+.finish-btn{
+  background-color: orange;
+  color: black;
+  margin: 1em
+}
+
+.finish-btn:hover{
+  background-color: rgb(255, 186, 58);
+  cursor: pointer;
+}
+
+.finish-btn:active{
+  box-shadow: inset 0px 0px 8px black;
+  transform: scale(0.95);
+}
+form{
+  display: flex;
+}
+.results{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
