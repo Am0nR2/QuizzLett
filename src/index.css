@@ -205,3 +205,20 @@ form{
   align-items: center;
   justify-content: space-around;
 }
+@media(max-width: 900px)  {
+.labels form{
+  flex-direction: column;
+  gap: 1em;
+}
+.quiz{
+  position: unset;
+  margin-top: 1em;
+  font-size: 1.25em;
+}
+button{
+  font-size: inherit;
+}
+.results{
+  flex-direction: column;
+}
+}
